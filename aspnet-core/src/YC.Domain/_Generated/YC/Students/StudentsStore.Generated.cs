@@ -15,12 +15,12 @@ namespace YC.Students
 {
     public partial interface IStudentsStore : IDomainService //auto-generated
     {
-        IStudentRepository Student { get; }
-        IGroupRepository Group { get; }
+        //IStudentRepository Student { get; }
+        //IGroupRepository Group { get; }
     }
     public partial class StudentsStore : DomainService, IStudentsStore //auto-generated
     {
-        public IStudentRepository Student => this.LazyServiceProvider.LazyGetRequiredService<IStudentRepository>();
-        public IGroupRepository Group => this.LazyServiceProvider.LazyGetRequiredService<IGroupRepository>();
+        //public IStudentRepository Student => this.LazyServiceProvider.LazyGetRequiredService<IStudentRepository>();
+        //public IGroupRepository Group => this.LazyServiceProvider.LazyGetRequiredService<IGroupRepository>();
     }
 }

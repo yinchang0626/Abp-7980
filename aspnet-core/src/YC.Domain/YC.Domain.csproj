@@ -29,14 +29,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Students</DependentUpon>
     </Compile>
-    <Compile Update="_Generated\YC\Students\IGroupRepository.Generated.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Students</DependentUpon>
-    </Compile>
-    <Compile Update="_Generated\YC\Students\IStudentRepository.Generated.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Students</DependentUpon>
-    </Compile>
     <Compile Update="_Generated\YC\Students\Student.Generated.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Students</DependentUpon>

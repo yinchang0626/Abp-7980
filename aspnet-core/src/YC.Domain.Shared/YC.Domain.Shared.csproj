@@ -28,31 +28,4 @@
     <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="5.0.*" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Update="DataModel\DataModel.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>DataModel.efml</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="DataModel\DataModel.Diagram1.view">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>DataModel.efml</DependentUpon>
-    </None>
-    <None Update="DataModel\DataModel.edps">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>DataModel.efml</DependentUpon>
-    </None>
-    <None Update="DataModel\DataModel.efml">
-      <Generator>DevartEFCoreGenerator</Generator>
-      <LastGenOutput>DataModel.info</LastGenOutput>
-    </None>
-    <None Update="DataModel\DataModel.info">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>DataModel.efml</DependentUpon>
-    </None>
-  </ItemGroup>
-
 </Project>

@@ -21,9 +21,9 @@ namespace YC.Students
         Volo.Abp.Application.Services.CrudAppService<YC.Students.Student, YC.Students.Dtos.StudentWithDetailsDto, Guid, YC.Students.Dtos.StudentGetListDto, YC.Students.Dtos.StudentCreateDto, YC.Students.Dtos.StudentUpdateDto>,
         IStudentCrudAppService
     {
-        private readonly IStudentRepository _repository;
+        private readonly Volo.Abp.Domain.Repositories.IRepository<YC.Students.Student, Guid> _repository;
 
-        public StudentCrudAppService(IStudentRepository repository) : base(repository)
+        public StudentCrudAppService(Volo.Abp.Domain.Repositories.IRepository<YC.Students.Student, Guid> repository) : base(repository)
         {
             this._repository = repository;
         }

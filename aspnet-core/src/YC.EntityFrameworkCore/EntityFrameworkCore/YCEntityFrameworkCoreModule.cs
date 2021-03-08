@@ -10,6 +10,7 @@ using Volo.Abp.Modularity;
 using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace YC.EntityFrameworkCore
 {
@@ -39,6 +40,9 @@ namespace YC.EntityFrameworkCore
                 /* Remove "includeAllEntities: true" to create
                  * default repositories only for aggregate roots */
                 options.AddDefaultRepositories(includeAllEntities: true);
+
+                options.Entity<Students.Student>(o => o.DefaultWithDetailsFunc = e => e.Include(x => x.Group));
+                options.Entity<Students.Group>(o => o.DefaultWithDetailsFunc = e => e.Include(x => x.Students));
             });
 
             Configure<AbpDbContextOptions>(options =>

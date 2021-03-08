@@ -37,23 +37,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>EntityFrameworkCore</DependentUpon>
     </Compile>
-    <Compile Update="_Generated\YC\Students\EfCoreGroupRepository.Generated.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Students</DependentUpon>
-    </Compile>
-    <Compile Update="_Generated\YC\Students\EfCoreStudentRepository.Generated.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Students</DependentUpon>
-    </Compile>
     <Compile Update="_Generated\YC\Students\Group.Configuration.Generated.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Students</DependentUpon>
     </Compile>
     <Compile Update="_Generated\YC\Students\Student.Configuration.Generated.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Students</DependentUpon>
-    </Compile>
-    <Compile Update="_Generated\YC\Students\StudentsQueryableExtensions.Generated.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Students</DependentUpon>
     </Compile>

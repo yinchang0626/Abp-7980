@@ -21,9 +21,9 @@ namespace YC.Students
         Volo.Abp.Application.Services.CrudAppService<YC.Students.Group, YC.Students.Dtos.GroupWithDetailsDto, Guid, YC.Students.Dtos.GroupGetListDto, YC.Students.Dtos.GroupCreateDto, YC.Students.Dtos.GroupUpdateDto>,
         IGroupCrudAppService
     {
-        private readonly IGroupRepository _repository;
+        private readonly Volo.Abp.Domain.Repositories.IRepository<YC.Students.Group, Guid> _repository;
 
-        public GroupCrudAppService(IGroupRepository repository) : base(repository)
+        public GroupCrudAppService(Volo.Abp.Domain.Repositories.IRepository<YC.Students.Group, Guid> repository) : base(repository)
         {
             this._repository = repository;
         }
