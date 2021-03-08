@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>YC</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="_Generated\YC\Students\StudentsApi.Generated.cs" />
+    <Compile Remove="_Generated\YC\Students\StudentsApi.GroupCrudAppService.Generated.cs" />
+    <Compile Remove="_Generated\YC\Students\StudentsApi.StudentCrudAppService.Generated.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YC.Application.Contracts\YC.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Account.HttpApi" Version="4.2.2" />
+    <PackageReference Include="Volo.Abp.Identity.HttpApi" Version="4.2.2" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.HttpApi" Version="4.2.2" />
+    <PackageReference Include="Volo.Abp.TenantManagement.HttpApi" Version="4.2.2" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.HttpApi" Version="4.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="_Generated\YC\Students\" />
+  </ItemGroup>
+
+</Project>
